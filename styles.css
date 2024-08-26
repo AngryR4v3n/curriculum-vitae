@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#me {
+    border-radius: 50px;
+}
+
+.bean-list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    word-spacing: -1em;
+
+}
+
+.bean-container span {
+    color: white;
+    padding: 2px;
+    font-size: 16px;
+    word-spacing: 0em;
+}
+
+#language-bean :last-child {
+    background-color: #0173B3;
+}
+
+#tech-bean :last-child {
+    background-color: #31C553;
+}
+
+#learning-bean :last-child {
+    background-color: rgb(241, 176, 33);
+}
+
+#interested-bean :last-child {
+    background-color: rgb(245, 50, 50);
+}
+
+.bean-container :first-child {
+    background-color: #555555;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.bean-container :last-child {
+    background-color: #0577B7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+header {
+    background-color: #35424a;
+    padding: 20px 0;
+    margin-bottom: 20px ;
+}
+
+p {
+    text-align: justify;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #35424a;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+#ed-sect h3 {
+    margin-bottom: 5px;
+}
+#ed-sect p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#certs-sect a {
+    margin-bottom: 5px;
+}
+
+#certs-sect p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.skill-level {
+    background-color: #4CAF50;
+    height: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .section h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .section h2 {
+        font-size: 1em;
+    }
+}
