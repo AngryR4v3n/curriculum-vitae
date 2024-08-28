@@ -1,9 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #505050;
+}
+
+
+p {
+    text-align: justify;
 }
 
 .container {
@@ -12,7 +17,7 @@ body {
     margin: auto;
     overflow: hidden;
     padding: 20px;
-    background-color: white;
+    background-color: #C0C0C0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -25,6 +30,10 @@ body {
 
 #me {
     border-radius: 50px;
+    box-shadow: inset 0 0 0 15px white;
+    /* Inset shadow to create an inward border */
+    height: 300px;
+
 }
 
 .bean-list {
@@ -74,7 +83,7 @@ body {
 header {
     background-color: #35424a;
     padding: 20px 0;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 p {
@@ -87,9 +96,23 @@ header h1 {
 
 .section {
     margin-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .section h2 {
+    color: #35424a;
+    padding-left: 15px;
+    font-size: 2em;
+    /* Allows control over padding and border */
+    border-bottom: 2px solid #ccc;
+    /* Separator line with color and thickness */
+    padding-bottom: 5px;
+    /* Space between text and separator line */
+}
+
+
+.section h3 {
     color: #35424a;
 }
 
@@ -100,10 +123,12 @@ header h1 {
 #ed-sect h3 {
     margin-bottom: 5px;
 }
+
 #ed-sect p {
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
 #certs-sect a {
     margin-bottom: 5px;
 }
@@ -111,6 +136,13 @@ header h1 {
 #certs-sect p {
     margin-bottom: 5px;
     margin-top: 5px;
+}
+
+.skills-container {
+
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .skill-name {
@@ -134,7 +166,6 @@ header h1 {
 
 @media (max-width: 768px) {
     .container {
-        width: 95%;
         padding: 10px;
     }
 
@@ -149,11 +180,41 @@ header h1 {
     .section h2 {
         font-size: 1.2em;
     }
+
+    p {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 0.8em;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .bean-container span {
+        font-size: 0.6em;
+    }
+
+    .bean-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    h3 {
+        font-size: 0.75em;
+    }
+
+    a {
+        font-size: 0.8em;
+    }
+
+    span {
+        font-size: 0.6em;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
-        width: 100%;
         padding: 5px;
     }
 
@@ -163,5 +224,23 @@ header h1 {
 
     .section h2 {
         font-size: 1em;
+    }
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.75em;
+    }
+
+    li {
+        font-size: 0.75em;
+    }
+
+    .bean-container span {
+        font-size: 0.6em;
+    }
+
+    .skills-container {
+        flex-direction: column;
     }
 }
